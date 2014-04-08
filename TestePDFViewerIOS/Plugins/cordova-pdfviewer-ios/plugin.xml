@@ -17,10 +17,6 @@
             </feature>
         </config-file>
 
-        <js-module src="www/CDVPDFViewer.js" name="CDVPDFViewer">
-            <clobbers target="CDVPDFViewer" />
-        </js-module>
-
 		<framework src="MessageUI.framework" weak="true"/>
 		<framework src="Foundation.framework" weak="true"/>
 		<framework src="UIKit.framework" weak="true"/>
