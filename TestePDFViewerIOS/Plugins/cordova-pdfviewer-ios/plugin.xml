@@ -10,6 +10,7 @@
     </engines>
 
     <platform name="ios">
+
         <config-file target="config.xml" parent="/*">
             <feature name="CDVPDFViewer">
                 <param name="ios-package" value="CDVPDFViewer"/>
@@ -17,7 +18,7 @@
         </config-file>
 
         <js-module src="www/CDVPDFViewer.js" name="CDVPDFViewer">
-            <clobbers target="window.plugins.CDVPDFViewer" />
+            <clobbers target="CDVPDFViewer" />
         </js-module>
 
 		<framework src="MessageUI.framework" weak="true"/>
@@ -32,7 +33,7 @@
 
         <header-file src="src/ios/CDVPDFViewerViewController.h" />
         <source-file src="src/ios/CDVPDFViewerViewController.m" />
-		<resource-file src="src/ios/CDVPDFViewerViewController.xib" />
+		<source-file src="src/ios/CDVPDFViewerViewController.xib" />
 
         <header-file src="src/ios/ReaderViewController.h" />
         <source-file src="src/ios/ReaderViewController.m" />
